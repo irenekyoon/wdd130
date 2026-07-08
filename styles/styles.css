@@ -14,7 +14,7 @@ h1 {
 }
 
 img {
-    width: 150;
+    width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -32,12 +32,15 @@ main {
 main img {
     width: 150px;
     height: auto;
+    border: .1px;
+    padding: 5px;
+    box-shadow: 0 0 30 #333333;
 }
 
 aside {
     width: 800px;
     margin: 20px;
-    border: 10px solid rbg(0 0 0 / 0.2);
+    border: 1px solid rgb(215, 210, 204);
     padding: 15px;
     background-color: antiquewhite;
     color: #222a45
