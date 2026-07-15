@@ -87,6 +87,12 @@ article {
     margin-right: 10px;
 }
 
+.hero article {
+    position: absolute;
+    width: 100%;
+
+}
+
 .socialmedia {
     width: 40px;
 }
