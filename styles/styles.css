@@ -1,28 +1,48 @@
+:root {
+    --primary-text-color: rgb(61, 43, 31);
+    --primary-accent-color: rgb(171, 139, 123);
+    --light-text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 .5rem 0 .5rem;
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
 nav {
-    background-color: darkblue;
+    /* background-color: rgb(171, 139, 123); */
+    background-color: var(--primary-accent-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--light-text-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    margin: 20px 5px 10px 5px;
+    color: var(--primary-text-color);
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid rgb(201, 184, 154);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 0;
+/* p {
+    padding: 1rem; */
 }
 
 main {
@@ -35,24 +55,54 @@ main img {
     border: .1px;
     padding: 5px;
     box-shadow: 0 0 10px #333333;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+p {
+    margin-left: 1rem;
 }
 
 aside {
-    width: 800px;
-    margin: 20px;
-    border: 1px solid rgb(215, 210, 204);
-    padding: 15px;
-    background-color: antiquewhite;
-    color: #222a45
+    width: 600px;
+    /* margin: 20px; */
+    position: relative;
+    /* border: 1px solid rgb(215, 210, 204); */
+    /* padding: 15px; */
+    /* background-color: antiquewhite; */
+    /* color: var(--primary-text-color) */
 }
 
 aside img {
     width: 200px;
     height: auto;
+
+}
+
+aside h2 {
+    position: absolute;
+    top: 22px;
+    left: 22px;
 }
 
 footer {
-    margin-top: 10px;
-    border-top: 1px solid #000;
+    background-color: var(--primary-accent-color);
+    color: var(--light-text-color);
+    margin-top: .5px;
+    margin-bottom: .5px;
+    padding: .5px;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000
+}
+
+.indent {
+    padding-left: 2rem;
 }
