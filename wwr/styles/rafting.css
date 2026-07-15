@@ -80,7 +80,7 @@ article {
 
 }
 
-.hero article {
+.hero article img {
     position: absolute;
     float: right;
     width: 80px;
