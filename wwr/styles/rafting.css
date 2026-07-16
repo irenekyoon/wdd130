@@ -2,8 +2,7 @@
     --accent1-color: darkgreen;
     --accent2-color: rgb(201, 184, 154);
     --primary-color: rgb(31, 36, 33);
-
-    --background-color: rgb(250, 249, 246);
+    --background-color: rgb(194, 165, 154);
     --heading-font: arial, helvetica, sans-serif;
     --body-font: "Times New Roman", "Georgia", serif;
 }
@@ -65,28 +64,40 @@ h1 {
     color: #fff
 }
 
-h2 {
-    background-color: var(--primary-color);
-    color: var(--background-color)
-}
-
 article {
     position: absolute;
     top: 80px;
-    left: 44px;
     width: 100%;
-    padding: 16px;
+    padding: .5px 2px;
+    margin: 0 2px;
     background-color: var(--accent2-color);
-
 }
 
 .hero article img {
-    position: absolute;
+    /* position: absolute; */
     float: right;
-    width: 80px;
+    width: 90px;
+    margin-top: 5px;
     margin-right: 10px;
 }
 
+section {
+    color: var(--primary-color);
+    width: 100%;
+}
+
+h2 {
+    padding: 5px 2em;
+    background-color: var(--background-color);
+}
+
+.footer a img {
+    width: 90px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+/* 
 .hero article {
     position: absolute;
     width: 100%;
@@ -100,3 +111,7 @@ article {
 .indent {
     padding-left: 20px;
 }
+
+/* .hero {
+    position: relative;
+} */
