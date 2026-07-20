@@ -19,23 +19,30 @@ div {
 .one {
     width: 200px;
     height: 200px;
+
 }
 
 .flex {
     background-color: #aba;
-    /* write declarations here */
-
+    display: flex;
+    justify-content: center;
+    align-items: center;/
 }
 
 .grid {
     background-color: #abb;
-    /* enter declarations here */
+    display: grid;
+    place-items: center;
 
 }
 
 .container2 {
-    /* write declarations here */
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* solution gives same result: */
+    /* flex-wrap: wrap;
+    justify-content: space-around; */
 }
 
 .two {
@@ -44,13 +51,16 @@ div {
 }
 
 .container3 {
-    /* write declarations here */
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr;  this isn't correct. it needs to be removed and use .columns-3*/
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 .columns-3 {
-    /* write declaration here */
-
+    grid-column: span 3;
+    /* can also be the following: */
+    /* grid-column: 1/4 */
 }
 
 .three {
