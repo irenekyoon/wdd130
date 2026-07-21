@@ -38,7 +38,8 @@ h2 {
 
 .grid {
     border: thin solid silver;
-    display: flex;
+    /* display: flex; */
+    display: grid;
     grid-column: auto;
     align-items: center;
     column-gap: 20px;
