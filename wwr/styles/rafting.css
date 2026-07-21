@@ -40,15 +40,26 @@ h2 {
     border: thin solid silver;
     /* display: flex; */
     display: grid;
-    grid-column: auto;
+    /* grid-column: auto; */
+    grid-template-columns: 200px 1fr;
     align-items: center;
-    column-gap: 20px;
+    /* column-gap: 20px; */
+}
+
+header img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+header nav {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
 }
 
 .navigation {
     display: flex;
     list-style: none;
-    grid-column: 1;
     background-color: var(--accent2-color);
     color: var(--background2-color);
     padding: 10px 50px;
