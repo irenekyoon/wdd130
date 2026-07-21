@@ -1,5 +1,5 @@
 :root {
-    --accent1-color: darkgreen;
+    --accent1-color: darkslategrey;
     --accent2-color: #222222;
     --primary-color: rgb(31, 36, 33);
     --background-color: #dddddd;
@@ -126,7 +126,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     /* background-color: var(--background2-color); */
     color: var(--background2-color);
 }
