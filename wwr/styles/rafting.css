@@ -1,8 +1,9 @@
 :root {
     --accent1-color: darkgreen;
-    --accent2-color: rgb(201, 184, 154);
+    --accent2-color: #222222;
     --primary-color: rgb(31, 36, 33);
-    --background-color: rgb(194, 165, 154);
+    --background-color: #dddddd;
+    --background2-color: #eee;
     --heading-font: arial, helvetica, sans-serif;
     --body-font: "Times New Roman", "Georgia", serif;
 }
@@ -25,10 +26,68 @@ footer {
     margin: 0 auto;
 }
 
+/* header {
+    background-color: var(--background-color);
+} */
+
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+.grid {
+    border: thin solid silver;
+    display: flex;
+    grid-column: auto;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    grid-column: 1;
+
+    /* align-items: center;
+    justify-content: space-around; */
+}
+
+.nav_links {
+    background-color: var(--accent2-color);
+    color: var(--background2-color);
+    padding: 10px 20px;
+    margin: 5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+li {
+    /* flex: 1 1 auto; */
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--background2-color)
+}
+
+header img {
+    grid-column: 1/2;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+ul {
+    padding: 20px 5em;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+
+}
+
+nav {
+    grid-column: 2/2;
 }
 
 nav p {
@@ -37,6 +96,7 @@ nav p {
 }
 
 .socialmedia a {
+
     text-decoration: none;
 }
 
@@ -58,7 +118,8 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff
+    /* background-color: var(--background2-color); */
+    color: var(--background2-color);
 }
 
 article {
@@ -68,32 +129,141 @@ article {
     height: auto;
     padding: .5px 2px;
     margin: 0 2px;
-    background-color: var(--accent2-color);
+    /* background-color: var(--accent2-color); */
+    background-color: var(--background2-color);
 }
 
 .hero article img {
     float: right;
     width: 80px;
-    margin-top: 5px;
+    /* margin-top: .5px; */
     margin-right: 10px;
 }
 
 .hero article {
+    padding-top: 10px;
     position: absolute;
 }
 
 section {
+    background-color: var(--background2-color);
     color: var(--primary-color);
     width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: thin solid silver;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 10px auto;
+    padding: 10px;
+}
+
+.one-a {
+    padding: 2px;
+    margin: 2px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: center;
+}
+
+.one-b {
+    padding: 2px;
+    margin: 12px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+}
+
+.one-c {
+    padding-left: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: center;
+}
+
+#one-c {
+    padding: 20px;
+    width: 250px;
+
+}
+
+.one-d {
+    padding: 20px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-content: center;
 }
 
 h2 {
-    padding: 5px 2em;
-    background-color: var(--background-color);
+    padding: -5px;
+    /* background-color: var(--background-color); */
+    display: flex;
+    justify-content: center;
+}
+
+.container5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section div img {
+    width: 8em;
+}
+
+.five {
+    padding: 20px;
+    justify-content: center;
+}
+
+figcaption {
+    background-color: #222222;
+    color: white;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
 
 .footer a img {
-    width: 90px;
+    padding: .1px;
+    margin: .1px;
+    width: 20px;
     margin-top: 5px;
     margin-right: 10px;
+}
+
+footer div p {
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 1px;
+    border: thin solid silver;
+    margin: .5px 0;
+    display: grid;
+    grid-template-columns: auto 100px;
+}
+
+.two-a {
+    /* background-color: #ace; */
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -50px;
+}
+
+.two-b {
+    align-items: center;
+    justify-content: end;
+    margin-top: 10.5px;
+    margin-bottom: -50px;
 }

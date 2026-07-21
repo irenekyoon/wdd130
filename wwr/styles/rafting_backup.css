@@ -1,0 +1,148 @@
+:root {
+    --accent1-color: darkgreen;
+    --accent2-color: rgb(201, 184, 154);
+    --primary-color: rgb(31, 36, 33);
+    --background-color: rgb(194, 165, 154);
+    --heading-font: arial, helvetica, sans-serif;
+    --body-font: "Times New Roman", "Georgia", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.grid {
+    display: flex;
+    grid-column: auto;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    grid-column: 1;
+    text-decoration: none
+        /* align-items: center;
+    justify-content: space-around; */
+}
+
+
+li {
+    flex: 1 1 auto;
+}
+
+header img {
+    grid-column: 1/2;
+}
+
+ul {
+    padding: 20px 5em;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+
+}
+
+nav {
+    grid-column: 2/2;
+}
+
+nav p {
+    margin: 5px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 22px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff
+}
+
+article {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: auto;
+    padding: .5px 2px;
+    margin: 0 2px;
+    background-color: var(--accent2-color);
+}
+
+.hero article img {
+    float: right;
+    width: 80px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.hero article {
+    position: absolute;
+}
+
+section {
+    color: var(--primary-color);
+    width: 100%;
+}
+
+h2 {
+    padding: 5px 2em;
+    background-color: var(--background-color);
+}
+
+.footer a img {
+    width: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.two {
+    background-color: #ace;
+    height: 100px;
+}
