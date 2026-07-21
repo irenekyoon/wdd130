@@ -189,7 +189,8 @@ section {
 .container1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 10px auto;
+    /* grid-row: 10px auto; */
+
     padding: 10px auto;
 }
 
