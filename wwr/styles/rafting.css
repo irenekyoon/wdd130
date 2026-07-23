@@ -1,8 +1,9 @@
 :root {
     --accent1-color: darkslategrey;
-    --accent2-color: #222222;
     --primary-color: rgb(31, 36, 33);
-    --background2-color: #eee;
+    /* --background2-color: #eee; */
+    --primary-light: #E8EFE9;
+    --border: silver;
     --heading-font: arial, helvetica, sans-serif;
     --body-font: "verdana";
 }
@@ -23,6 +24,11 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+
+}
+
+header {
+    background-color: var(--primary-light);
 }
 
 h1,
@@ -32,7 +38,7 @@ h2 {
 }
 
 .grid {
-    border: thin solid silver;
+    border: thin solid var(--border);
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
@@ -49,13 +55,14 @@ header nav {
     grid-column-start: 2;
     grid-column-end: 3;
     display: grid;
+
 }
 
 .navigation {
     display: flex;
     list-style: none;
-    background-color: var(--accent2-color);
-    color: var(--background2-color);
+    background-color: var(--accent1-color);
+    color: var(--primary-light);
     padding: 10px 50px;
     margin: 15px;
     justify-content: space-evenly;
@@ -68,7 +75,7 @@ li {
 
 li a {
     text-decoration: none;
-    color: var(--background2-color);
+    color: var(--primary-light);
     padding: 20px;
 }
 
@@ -106,23 +113,23 @@ nav p {
 
 h1 {
     position: absolute;
-    top: 230px;
+    top: 160px;
     width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent2-color);
-    color: var(--background2-color);
+    background-color: var(--accent1-color);
+    color: var(--primary-light);
 }
 
 article {
     position: absolute;
-    top: 300px;
+    top: 225px;
     width: 100%;
     height: auto;
     padding: .5px 20px;
     margin: 0 3px -30px 0px;
-    background-color: var(--background2-color);
+    background-color: var(--primary-light);
 }
 
 .hero article img {
@@ -150,16 +157,16 @@ article {
     position: absolute;
     text-align: center;
     font-size: 16px;
-    color: var(--primary-color)
+    color: var(--accent1-color)
 }
 
 section {
-    background-color: var(--background2-color);
+    background-color: var(--primary-light);
     color: var(--primary-color);
     width: 100%;
     margin: 10px 0;
     padding: 10px;
-    border: thin solid silver;
+    border: thin solid var(--border);
 }
 
 .container1 {
@@ -252,8 +259,9 @@ footer div p {
 }
 
 .container2 {
+    background-color: var(--accent1-color);
     padding: 1px;
-    border: thin solid silver;
+    border: thin solid var(--border);
     margin: .5px 0;
     display: grid;
     grid-template-columns: auto 120px;
@@ -264,6 +272,7 @@ footer div p {
     justify-content: center;
     align-items: center;
     margin-bottom: -50px;
+    color: white
 }
 
 .two-b {
