@@ -1,0 +1,149 @@
+:root {
+    --primary-dark: #06402B;
+    --secondary-dark: rgb(87, 20, 44);
+    --primary-light: #E8EFE9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    width: 650px;
+
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 20px 20px 0 20px;
+    /* border: 2px solid silver */
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container1 {
+    background-color: #E8EFE9;
+    border: 2px solid silver;
+    /* display: grid; */
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* form {
+    color: #06402B;
+    font-size: 20px;
+    text-align: left;
+    padding: 5px 15px;
+    margin: 0 20px 20px 20px;
+    border: 2px solid silver
+} */
+
+form {
+
+    /* margin: 5px auto; */
+    margin: 10px 20px;
+    padding: 5px 15px;
+    /* border: 1px solid rgb(0 0 0 / 0.1); */
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+    border: 2px solid silver;
+
+
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    /* border: 1px solid rgb(0 0 0 / 0.2); */
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    font-size: 1.3em;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label {
+    /* display: block;
+    margin: 20px 0 0 0; */
+    text-align: right;
+    padding-right: 1rem;
+
+}
+
+input,
+select,
+textarea {
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+
+button {
+    display: block;
+    font-size: 20px;
+    font-weight: 20px;
+    padding: 10px;
+    border-radius: .5rem;
+    /* align-self: end; */
+    margin-right: auto;
+    /* margin-bottom: 20px; */
+    /* margin: 1rem; */
+    /* background-color: rgb(87, 20, 44); */
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+button:hover {
+    background-color: darkslategray;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    /* border-top: 1px solid #ccc; */
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+
+}
