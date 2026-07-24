@@ -2,6 +2,8 @@
     --accent1-color: darkslategrey;
     --primary-color: rgb(31, 36, 33);
     --primary-light: #E8EFE9;
+    --accent-light: #F5EDDC;
+    --white: white;
     --border: silver;
     --heading-font: arial, helvetica, sans-serif;
     --body-font: "verdana";
@@ -28,6 +30,7 @@ footer {
 
 header {
     background-color: var(--primary-light);
+
 }
 
 h1,
@@ -61,7 +64,6 @@ header nav {
     display: flex;
     list-style: none;
     background-color: var(--accent1-color);
-    color: var(--primary-light);
     padding: 10px 50px;
     margin: 15px;
     justify-content: space-evenly;
@@ -74,7 +76,7 @@ li {
 
 li a {
     text-decoration: none;
-    color: var(--primary-light);
+    color: var(--white);
     padding: 20px;
 }
 
@@ -121,20 +123,27 @@ h1 {
     color: var(--primary-light);
 }
 
+h2 article {
+    width: 50%;
+}
+
 article {
     position: absolute;
     top: 225px;
-    width: 100%;
+    width: 95%;
     height: auto;
-    padding: .5px 20px;
-    margin: 0 3px -30px 0px;
-    background-color: var(--primary-light);
+    padding: .5px;
+    margin: 0 auto;
+
+    background-color: var(--accent-light);
 }
+
 
 .hero article img {
     float: right;
     width: 100px;
-    margin-right: 10px;
+    margin-top: 10px;
+    /* margin-right: 10px; */
     grid-column: 2/2;
     justify-content: right;
 }
@@ -142,11 +151,13 @@ article {
 .hero article {
     display: grid;
     grid-template-columns: auto 120px;
-    grid-gap: 30px;
-    padding-top: 0px;
+    grid-gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 0px;
     position: absolute;
     margin-top: 0px;
-    margin-bottom: -20px;
+    margin-bottom: 0px;
+    margin-left: 16.5px;
     grid-template-rows: auto 0px;
 }
 
@@ -154,7 +165,7 @@ article {
     grid-column: 1/2;
     padding-top: 35px;
     position: absolute;
-    text-align: center;
+    text-align: right;
     font-size: 16px;
     color: var(--accent1-color)
 }
@@ -217,12 +228,14 @@ section {
 h2 {
     display: flex;
     justify-content: center;
+
 }
 
 .container5 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: var(--accent-light);
 }
 
 section div img {
@@ -230,13 +243,13 @@ section div img {
 }
 
 .five {
-    padding: 20px;
+    padding: 18px;
     justify-content: center;
 }
 
 figcaption {
     background-color: #222222;
-    color: white;
+    color: var(--white);
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
@@ -271,7 +284,8 @@ footer div p {
     justify-content: center;
     align-items: center;
     margin-bottom: -50px;
-    color: white
+    color: var(--white);
+    padding-left: 19%;
 }
 
 .two-b {
