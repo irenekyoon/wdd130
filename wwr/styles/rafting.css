@@ -97,18 +97,29 @@ h1 {
 .hero article {
     top: 380px;
     position: absolute;
-    background-color: var(--med-light);
 
+    background-color: var(--med-light);
 }
 
 .hero article img {
     float: right;
-    width: 120px;
+    width: 87px;
+}
+
+.hero article p {
+    padding: 2px;
+    margin: 2px;
 }
 
 section {
     background-color: var(--light);
-    margin: 10px 0px;
+    margin: 7px 0px;
+}
+
+.hero h2 {
+    background-color: var(--med-light);
+    color: var(--med-dark);
+    padding: 0px;
 }
 
 h2 {
@@ -142,12 +153,12 @@ h2 {
 
 
 figure img {
-    width: 150px;
+    width: 157px;
     padding: 5px;
 }
 
 figcaption {
-    width: 150px;
+    width: 157px;
     padding: 0 5px;
     text-align: center;
     background-color: var(--dark);
