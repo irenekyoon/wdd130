@@ -153,17 +153,20 @@ h2 {
 
 
 figure img {
-    width: 157px;
-    padding: 5px;
+    width: 163px;
+    padding: 0px;
+    /* border: 1px solid var(--med-dark); */
 }
 
 figcaption {
-    width: 157px;
+    width: 163px;
     padding: 0 5px;
     text-align: center;
+
     background-color: var(--dark);
     color: var(--white);
     font-family: var(--body-font);
+    border-radius: 5px;
 }
 
 .adventure h2 {
