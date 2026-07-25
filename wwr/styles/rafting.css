@@ -164,7 +164,6 @@ figcaption {
     background-color: var(--dark);
     color: var(--white);
     font-family: var(--body-font);
-    opacity: .8;
 }
 
 .adventure h2 {
