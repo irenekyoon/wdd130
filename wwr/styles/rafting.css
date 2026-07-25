@@ -1,11 +1,10 @@
 :root {
-    --accent1-color: darkslategrey;
-    --primary-color: rgb(31, 36, 33);
-    --primary-light: #E8EFE9;
-    --accent-light: #F5EDDC;
+    --med-dark: #718d82;
+    --med-light: #d3c096;
+    --dark: #241e0e;
+    --light: #e8dad3;
     --white: white;
-    --border: silver;
-    --heading-font: arial, helvetica, sans-serif;
+    --heading-font: "helvetica";
     --body-font: "verdana";
 }
 
@@ -17,88 +16,32 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--dark);
 }
 
+/*Limits the page width by combining the header, main, and footer elements and center the content on the display using an auto left-right margin*/
 header,
 main,
 footer {
     width: 840px;
     margin: 0 auto;
-
-}
-
-header {
-    background-color: var(--primary-light);
-
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-.grid {
-    border: thin solid var(--border);
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    align-items: center;
-}
-
-header img {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    justify-content: space-around;
-    padding: 30px;
-}
-
-header nav {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    display: grid;
-
-}
-
-.navigation {
-    display: flex;
-    list-style: none;
-    background-color: var(--accent1-color);
-    padding: 10px 50px;
-    margin: 15px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-li {
-    text-decoration: none;
-}
-
-li a {
-    text-decoration: none;
     color: var(--white);
-    padding: 20px;
 }
 
-ul {
-    padding: 20px 5em;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-
-}
-
-nav {
-    grid-column: 2/2;
-}
-
-nav p {
-    margin: 5px;
+nav,
+p,
+section,
+article {
+    margin: 16px;
     padding: 8px;
 }
 
 .socialmedia a {
-
     text-decoration: none;
 }
 
@@ -106,6 +49,7 @@ nav p {
     position: relative;
 }
 
+/*Styles the image within the div class="hero" to fill the entire width of the div and to be a block element. This is important because the image is the background of the hero div and it needs to fill the entire width of the div.*/
 .hero img {
     display: block;
     width: 100%;
@@ -114,183 +58,40 @@ nav p {
 
 h1 {
     position: absolute;
-    top: 160px;
+    top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: var(--primary-light);
-}
+    background-color: var(--dark);
 
-h2 article {
-    width: 50%;
-}
-
-article {
-    position: absolute;
-    top: 225px;
-    width: 95%;
-    height: auto;
-    padding: .5px;
-    margin: 0 auto;
-
-    background-color: var(--accent-light);
-}
-
-
-.hero article img {
-    float: right;
-    width: 100px;
-    margin-top: 10px;
-    /* margin-right: 10px; */
-    grid-column: 2/2;
-    justify-content: right;
 }
 
 .hero article {
-    display: grid;
-    grid-template-columns: auto 120px;
-    grid-gap: 15px;
-    padding-top: 10px;
-    padding-bottom: 0px;
+    top: 210px;
     position: absolute;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 16.5px;
-    grid-template-rows: auto 0px;
+    background-color: var(--med-light);
+
 }
 
-.hero article p {
-    grid-column: 1/2;
-    padding-top: 35px;
-    position: absolute;
-    text-align: right;
-    font-size: 16px;
-    color: var(--accent1-color)
+.hero article img {
+    float: right;
+    width: 120px;
 }
 
 section {
-    background-color: var(--primary-light);
-    color: var(--primary-color);
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: thin solid var(--border);
-}
-
-.container1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.one-a {
-    padding: 2px;
-    margin: 2px;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    justify-content: center;
-}
-
-.one-b {
-    padding: 2px;
-    margin: 12px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    justify-content: center;
-    font-size: 16px;
-    font-family: var(--body-font);
-}
-
-.one-c {
-    padding-left: 30px;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    justify-content: center;
-
-}
-
-#one-c {
-    padding: 20px;
-    width: 250px;
-
-}
-
-.one-d {
-    padding: 20px;
-    grid-column: 3/4;
-    grid-row: 2/3;
-    justify-content: center;
-    font-size: 16px;
-    font-family: var(--body-font);
+    background-color: var(--light);
+    margin: 10px 0px;
 }
 
 h2 {
-    display: flex;
-    justify-content: center;
-
-}
-
-.container5 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--accent-light);
-}
-
-section div img {
-    width: 8em;
-}
-
-.five {
-    padding: 18px;
-    justify-content: center;
-}
-
-figcaption {
-    background-color: #222222;
-    color: var(--white);
-    font: italic smaller sans-serif;
-    padding: 3px;
+    background-color: var(--med-dark);
+    width: 100%;
+    padding-top: 16px;
     text-align: center;
+
 }
 
-.footer a img {
-    padding: .1px;
-    margin: .1px;
-    width: 20px;
-    margin-top: 5px;
-    margin-right: 10px;
-}
-
-footer div p {
-    margin-top: 15px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.container2 {
-    background-color: var(--accent1-color);
-    padding: 1px;
-    border: thin solid var(--border);
-    margin: .5px 0;
-    display: grid;
-    grid-template-columns: auto 120px;
-}
-
-.two-a {
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -50px;
-    color: var(--white);
-    padding-left: 19%;
-}
-
-.two-b {
-    align-items: center;
-    justify-content: end;
-    margin-top: 10.5px;
-    margin-bottom: -50px;
+.socialmedia a img {
+    width: 50px;
 }
