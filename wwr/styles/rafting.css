@@ -1,5 +1,5 @@
 :root {
-    --med-dark: #718d82;
+    --med-dark: rgb(1, 49, 81);
     --med-light: #d3c096;
     --dark: #241e0e;
     --light: #e8dad3;
@@ -16,7 +16,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--dark);
+    /* color: var(--dark); */
 }
 
 /*Limits the page width by combining the header, main, and footer elements and center the content on the display using an auto left-right margin*/
@@ -30,6 +30,33 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
+    color: var(--white);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    width: 90%;
+    padding: 10px;
+    margin: 40px;
+    list-style: none;
+    justify-content: center;
+    background-color: var(--med-dark);
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    margin-left: 40px;
+}
+
+.navigation a {
+    align-content: center;
+    text-decoration: none;
     color: var(--white);
 }
 
@@ -68,7 +95,7 @@ h1 {
 }
 
 .hero article {
-    top: 210px;
+    top: 380px;
     position: absolute;
     background-color: var(--med-light);
 
@@ -87,11 +114,64 @@ section {
 h2 {
     background-color: var(--med-dark);
     width: 100%;
-    padding-top: 16px;
+    padding: 16px 0;
     text-align: center;
 
 }
 
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.history h2 {
+    grid-column: 1/4;
+}
+
+.history img {
+    width: 250px;
+    padding: 5px;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: 840 repeat(5 1fr);
+    justify-content: space-between;
+}
+
+
+
+figure img {
+    width: 150px;
+    padding: 5px;
+}
+
+figcaption {
+    width: 150px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: var(--body-font);
+    opacity: .8;
+}
+
+.adventure h2 {
+    grid-column: 1/6;
+}
+
 .socialmedia a img {
-    width: 50px;
+    width: 30px;
+}
+
+footer {
+    background-color: var(--med-dark);
+    color: var(--white);
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer p {
+    padding-bottom: 0px;
+    margin-right: 60px;
 }
