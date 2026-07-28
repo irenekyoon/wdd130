@@ -14,9 +14,10 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+figcaption,
+.serve2 {
     font-family: var(--body-font);
-    /* color: var(--dark); */
 }
 
 /*Limits the page width by combining the header, main, and footer elements and center the content on the display using an auto left-right margin*/
@@ -33,6 +34,13 @@ h2 {
     color: var(--white);
 }
 
+.navigation,
+h2,
+footer,
+button {
+    background-color: var(--med-dark);
+}
+
 header {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -46,7 +54,6 @@ header {
     margin: 40px;
     list-style: none;
     justify-content: center;
-    background-color: var(--med-dark);
 }
 
 .navigation li {
@@ -97,7 +104,6 @@ h1 {
 .hero article {
     top: 380px;
     position: absolute;
-
     background-color: var(--med-light);
 }
 
@@ -123,7 +129,6 @@ section {
 }
 
 h2 {
-    background-color: var(--med-dark);
     width: 100%;
     padding: 16px 0;
     text-align: center;
@@ -164,7 +169,6 @@ figcaption {
 
     background-color: var(--dark);
     color: var(--white);
-    font-family: var(--body-font);
     border-radius: 5px;
 }
 
@@ -178,7 +182,6 @@ figcaption {
 }
 
 footer {
-    background-color: var(--med-dark);
     color: var(--white);
     display: flex;
     justify-content: flex-end;
@@ -300,7 +303,6 @@ input {
 }
 
 button {
-    background-color: var(--med-dark);
     color: var(--white);
     font-size: 20px;
     width: 350px;
@@ -332,6 +334,5 @@ h2 {
 
     background-color: var(--dark);
     color: var(--white);
-    font-family: var(--body-font);
     border-radius: 5px;
 }
