@@ -28,14 +28,21 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
+h1 {
     font-family: var(--heading-font);
     color: var(--white);
 }
 
+h2 {
+    background-color: var(--med-dark);
+    color: var(--white);
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+
+}
+
 .navigation,
-h2,
 footer,
 button {
     background-color: var(--med-dark);
@@ -126,13 +133,6 @@ section {
     background-color: var(--med-light);
     color: var(--med-dark);
     padding: 0px;
-}
-
-h2 {
-    width: 100%;
-    padding: 16px 0;
-    text-align: center;
-
 }
 
 .history {
