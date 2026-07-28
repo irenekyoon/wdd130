@@ -26,62 +26,78 @@
     </header>
 
     <main>
-        <div class="address">
+        <div class="location">
             <h1>Whitewater Rafting Co</h1>
             <div>
-                <p>1020 10th St S </p>
-                <p>Golden, BC </p>
-                <p>V0A 1H0</p>
-                <p>Canada</p>
+                <p class="special1">1020 10th St S, Golden, BC V0A 1H0 Canada</p>
+                <p class="special2">Phone: 250-344-8888 | Email: info@whitewaterraftingco.ca</p>
             </div>
         </div>
 
-        <section class="contact">
-            <h2>Map and Contact Form</h2>
-            <div>
+        <div class="contact">
+            <!-- <section class="contact">
+            <h2>Map and Contact Form</h2> -->
+            <div class="map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.8655244248775!2d-116.96450642480599!3d51.29519872618502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5379bf90bf93b443%3A0x7ba554c9c8f391d0!2s1020%2010th%20St%20S%2C%20Golden%2C%20BC%20V0A%201H0%2C%20Canada!5e0!3m2!1sen!2sph!4v1784980207942!5m2!1sen!2sph"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.8655244248885!2d-116.96450642468375!3d51.29519872618482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5379bf90bf93b443%3A0x7ba554c9c8f391d0!2s1020%2010th%20St%20S%2C%20Golden%2C%20BC%20V0A%201H0%2C%20Canada!5e0!3m2!1sen!2sph!4v1785150519040!5m2!1sen!2sph"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
                     referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
             </div>
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="placeholder">
+                </div>
 
-                <label for="general inquiry">general inquiry</label>
-                <input type="radio" id="general inquiry" name="general inquiry">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="placeholder">
+                </div>
+                <div class="radio">
+                    <p>Message Purpose</p>
+                    <div class="message">
+                        <input type="radio" id="general inquiry" name="general inquiry">
+                        <label for="general inquiry">General Inquiry</label>
 
-                <label for="general inquiry">general inquiry</label>
-                <input type="radio" id="general inquiry" name="general inquiry">
+                        <input type="radio" id="reservation" name="reservation">
+                        <label for="reservation">Reservation Question</label>
 
-                <label for="general inquiry">general inquiry</label>
-                <input type="radio" id="general inquiry" name="general inquiry">
+                        <input type="radio" id="website suggestion" name="website suggestion">
+                        <label for="website suggestion">Website Suggestion</label>
+                    </div>
+                </div>
+                <div class="write">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Type here"></textarea>
+                </div>
 
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
+                <div>
+                    <label><input type="checkbox" id="newsletter" name="newsletter">Please subscribe me to the monthly
+                        newsletter</label>
+                </div>
 
-                <label><input type="checkbox" id="newsletter" name="newsletter">Please subscribe me to the month
-                    newsletter</label>
-
-                <button type="submit">Get in touch!</button>
+                <div>
+                    <button type="submit">Get in touch!</button>
+                </div>
 
             </form>
+        </div>
 
-
-        </section>
+        <!-- </section> -->
         <section class="serve">
-            <h2>Serve You!</h2>
-            <figure><img src="images/guide.webp" alt="Whitewater Co's guide extraordinaire, Peter">
-                <figcaption>Outdoor Guide</figcaption>
+            <h2>We Are Here to Serve You</h2>
+            <figure class="serve1"><img src="images/guide.webp" alt="Whitewater Co's guide extraordinaire, Peter">
+                <figcaption class="serve2">Outdoor Guide</figcaption>
             </figure>
-            <figure><img src="images/sales.webp" alt="Whitewater Rafting Co's sales manager, Nicole Nyguyen">
-                <figcaption>Sales Manager</figcaption>
+            <figure class="serve1"><img src="images/sales.webp"
+                    alt="Whitewater Rafting Co's sales manager, Nicole Nyguyen">
+                <figcaption class="serve2">Sales Manager</figcaption>
             </figure>
-            <figure><img src="images/it.webp" alt="Head of Whitewater Rafting Co's IT department, Wilford Wood">
-                <figcaption>IT Department</figcaption>
+            <figure class="serve1"> <img src="images/it.webp"
+                    alt="Head of Whitewater Rafting Co's IT department, Wilford Wood">
+                <figcaption class="serve2">IT Department</figcaption>
             </figure>
         </section>
 
