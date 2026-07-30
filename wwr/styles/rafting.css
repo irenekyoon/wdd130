@@ -349,7 +349,7 @@ button {
     color: var(--white);
     text-align: center;
     font-size: 32px;
-    font-weight: 50px;
+
     text-decoration: none;
     border-radius: 15px;
 }
@@ -467,7 +467,6 @@ form {
 }
 
 button {
-    width: 200px;
-    align-items: right;
-
+    width: 400px;
+    border-radius: 10px;
 }
