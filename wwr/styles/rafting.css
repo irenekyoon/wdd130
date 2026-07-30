@@ -397,26 +397,25 @@ button {
 
 }
 
-.enjoy2,
+#enjoy,
 .purpose p,
 form {
     box-shadow: 0 0 20px var(--dark);
     border: 2px solid var(--white);
 }
 
-.enjoy2,
+#enjoy,
 .purpose p {
     border-radius: 0 90px;
 }
 
-.enjoy2 {
+#enjoy {
     grid-column: 4/5;
     grid-row: 1/2;
     text-align: left;
-    font-size: 25px;
     font-weight: bold;
-    padding: 30px;
-    margin: 5px;
+    padding: 70px 23px;
+    margin: 0px;
 }
 
 .enjoy3 {
@@ -453,7 +452,7 @@ form {
 
 }
 
-.form p {
+#newsletter {
     border-radius: 2.5px;
     text-align: center;
     font-size: 27px;
