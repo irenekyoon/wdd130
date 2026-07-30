@@ -430,7 +430,7 @@ button {
     padding: 29px;
 }
 
-.testimonial {
+/* .testimonial {
     display: flex;
     flex-direction: row;
     background-color: var(--light);
@@ -446,7 +446,7 @@ button {
 .testimonial img {
     width: 250px;
     border-radius: 0 70px;
-}
+} */
 
 
 
