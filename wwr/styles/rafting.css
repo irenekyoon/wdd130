@@ -489,7 +489,7 @@ button {
 }
 
 #trips-hero-book {
-    top: 275px;
+    top: 235px;
     align-self: flex-end;
     margin-left: 5px;
 }
@@ -520,8 +520,8 @@ td {
 }
 
 th {
-    background-color: var(--med-dark);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--med-dark);
 }
 
 #book {
