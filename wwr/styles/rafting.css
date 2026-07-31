@@ -97,7 +97,6 @@ article {
     position: relative;
 }
 
-/*Styles the image within the div class="hero" to fill the entire width of the div and to be a block element. This is important because the image is the background of the hero div and it needs to fill the entire width of the div.*/
 .hero img {
     display: block;
     width: 100%;
@@ -200,10 +199,8 @@ footer p {
 
 .location div {
     display: block;
-    /* grid-row: 4/6; */
     text-align: center;
     color: var(--dark);
-
     padding: 30px 0px 0px;
     margin: 10px 0px 30px;
     background-color: var(--light);
@@ -216,8 +213,6 @@ footer p {
 .special2 {
     margin: 0px 0px 5px;
     padding: 0px;
-
-
 }
 
 .location h1 {
@@ -324,6 +319,7 @@ button {
     border-radius: 5px;
 }
 
+/* Index page */
 .display-hero {
     display: grid;
     justify-items: start;
