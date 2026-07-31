@@ -148,7 +148,7 @@ section {
 .adventure {
     width: 840px;
     display: grid;
-    grid-template-columns: 155px 155px 150px 155px 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 figure img {
@@ -188,7 +188,7 @@ footer p {
     margin-right: 60px;
 }
 
-
+/* Contact page */
 .location {
     position: relative;
     display: flex;
@@ -245,11 +245,11 @@ iframe {
     width: 390px;
 }
 
-form {
-    width: 450px;
+#contact-form {
+    width: 425px;
 }
 
-form>* {
+#contact-form>* {
     padding: 5px;
     margin: 4px;
 }
@@ -315,11 +315,10 @@ button {
 }
 
 .serve2 {
-    width: 170px;
+    width: 150px;
     padding: 0 5px;
     /* margin-left: 50px; */
     text-align: center;
-
     background-color: var(--dark);
     color: var(--white);
     border-radius: 5px;
