@@ -369,18 +369,6 @@ button {
     width: 720px;
 }
 
-/* .hero img {
-    display: block;
-    width: 100%;
-    height: auto; 
-} */
-/* 
-.hero article {
-    top: 380px;
-    position: absolute;
-    background-color: var(--med-light);
-} */
-
 .enjoy-bc {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -489,7 +477,7 @@ button {
 }
 
 #trips-hero-book {
-    top: 235px;
+    top: 230px;
     align-self: flex-end;
     margin-left: 5px;
 }
@@ -522,13 +510,6 @@ td {
 th {
     background-color: var(--white);
     color: var(--med-dark);
-}
-
-#book {
-    position: absolute;
-    left: 320x;
-    padding: 2px;
-    width: 200px;
 }
 
 .beginner,
