@@ -1,0 +1,79 @@
+:root {
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --font-size: 30px;
+    --background-color: #f3ede3;
+    --border: 2px solid #766659;
+    --box-shadow: 0 0 #635e6a;
+    --very-light: #fefdfc;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    box-shadow: var(--box-shadow);
+
+}
+
+header {
+    width: 850px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+h1 {
+    display: block;
+    width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    display: grid;
+    width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    border: var(--border);
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+fieldset {
+    display: grid;
+    border: var(--border);
+}
+
+legend {
+    margin-top: 10px;
+    padding: 1px;
+}
+
+label,
+input,
+option,
+select,
+button {
+    padding: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.centering {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
